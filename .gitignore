@@ -1,0 +1,22 @@
+# середовище
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# попередня версія (лишається локально)
+_old_v1/
+
+# чужі дані — завантажуються кодом або tools/*, не перепубліковуємо
+data/log/
+data/archive/
+data/geo/_src/
+data/geo/_osm_places.tsv
+data/geo/raions.geojson
+data/geo/oblasts.geojson
+data/geo/mapa_cities.json
+
+# велика модель — у GitHub Release, див. tools/fetch_model.py
+models/intent/
+models/*_new/

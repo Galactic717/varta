@@ -1,0 +1,115 @@
+{"text": "а де ближчий до мене шахед зараз", "intent": "nearest"}
+{"text": "найближча до Запоріжжя ракета де", "intent": "nearest"}
+{"text": "шо там найближче до хати", "intent": "nearest"}
+{"text": "як далеко найближчий мопед від Фастова", "intent": "nearest"}
+{"text": "відстань до найближчої цілі", "intent": "nearest"}
+{"text": "покажи що найближче", "intent": "nearest"}
+{"text": "ближчий до Вишгорода дрон де летить", "intent": "nearest"}
+{"text": "які шахеди найближчі до мене", "intent": "nearest"}
+{"text": "найближче до Конотопа що є", "intent": "nearest"}
+{"text": "де найближча балістика", "intent": "nearest"}
+{"text": "наскільки близько до мене найближча загроза", "intent": "nearest"}
+{"text": "що зараз над Хмельницьким", "intent": "around"}
+{"text": "над Тернополем щось літає?", "intent": "around"}
+{"text": "є щось в радіусі 15 км від мене", "intent": "around"}
+{"text": "що коло Ізмаїла", "intent": "around"}
+{"text": "чи є щось над Бучею зараз", "intent": "around"}
+{"text": "шахеди біля Шостки є?", "intent": "around"}
+{"text": "що поблизу мене в радіусі 40 км", "intent": "around"}
+{"text": "що навколо Павлограда", "intent": "around"}
+{"text": "в небі над Ужгородом щось є", "intent": "around"}
+{"text": "які дрони коло Охтирки", "intent": "around"}
+{"text": "біля нас шось літає?", "intent": "around"}
+{"text": "чи летить щось на Запоріжжя", "intent": "approaching"}
+{"text": "на Херсон летять шахеди?", "intent": "approaching"}
+{"text": "в мою сторону хтось летить", "intent": "approaching"}
+{"text": "мені загрожує щось зараз?", "intent": "approaching"}
+{"text": "ракети в бік Кропивницького?", "intent": "approaching"}
+{"text": "чи долетить той шахед до Фастова", "intent": "approaching"}
+{"text": "летить на нас мопед чи ні", "intent": "approaching"}
+{"text": "чи прямують дрони на Вишгород", "intent": "approaching"}
+{"text": "чи є загроза для Тернополя", "intent": "approaching"}
+{"text": "щось наближається до мене?", "intent": "approaching"}
+{"text": "шахед курсом на Павлоград?", "intent": "approaching"}
+{"text": "чи буде ракета на Хмельницький", "intent": "approaching"}
+{"text": "скільки хвилин до нас летіти шахеду", "intent": "eta"}
+{"text": "коли ракета долетить до Запоріжжя", "intent": "eta"}
+{"text": "через скільки буде над Херсоном", "intent": "eta"}
+{"text": "скоро до мене долетить?", "intent": "eta"}
+{"text": "о котрій шахед буде біля Фастова", "intent": "eta"}
+{"text": "скільки в мене є часу", "intent": "eta"}
+{"text": "за скільки хвилин мопед буде у Бучі", "intent": "eta"}
+{"text": "коли вони будуть тут", "intent": "eta"}
+{"text": "як швидко він до нас долетить", "intent": "eta"}
+{"text": "в Ужгороді тривога є?", "intent": "alert"}
+{"text": "чи гуде сирена у Тернополі", "intent": "alert"}
+{"text": "де зараз оголошена тривога", "intent": "alert"}
+{"text": "у нас вже відбій?", "intent": "alert"}
+{"text": "тривога на Одещині є", "intent": "alert"}
+{"text": "чи є зараз повітряна тривога в Херсоні", "intent": "alert"}
+{"text": "по яких областях тривога", "intent": "alert"}
+{"text": "у мене в районі тривога?", "intent": "alert"}
+{"text": "яка тривога червона чи жовта у Запоріжжі", "intent": "alert"}
+{"text": "чому в нас сирена", "intent": "alert"}
+{"text": "що зараз у небі над країною", "intent": "overview"}
+{"text": "коротко обстановка", "intent": "overview"}
+{"text": "що діється на Запоріжжі зараз", "intent": "overview"}
+{"text": "ситуація на Херсонщині", "intent": "overview"}
+{"text": "як обстановка в Україні", "intent": "overview"}
+{"text": "що зараз відбувається по тривогах і цілях", "intent": "overview"}
+{"text": "звідки заходять шахеди", "intent": "overview"}
+{"text": "розкажи що зараз на карті", "intent": "overview"}
+{"text": "загальна картина атаки", "intent": "overview"}
+{"text": "що на сході", "intent": "overview"}
+{"text": "скільки шахедів зараз в повітрі", "intent": "count"}
+{"text": "скільки ракет летить", "intent": "count"}
+{"text": "скільки дронів на Сумщині", "intent": "count"}
+{"text": "яка кількість цілей біля мене", "intent": "count"}
+{"text": "скільки всього бпла зараз", "intent": "count"}
+{"text": "скільки їх летить на Одещину", "intent": "count"}
+{"text": "багато зараз мопедів?", "intent": "count"}
+{"text": "скільки груп шахедів по країні", "intent": "count"}
+{"text": "можна вже виходити з підвалу?", "intent": "safety"}
+{"text": "чи безпечно йти в магазин", "intent": "safety"}
+{"text": "треба будити дітей і йти в коридор?", "intent": "safety"}
+{"text": "можна спокійно лягати спати?", "intent": "safety"}
+{"text": "чи варто ховатися зараз", "intent": "safety"}
+{"text": "безпечно їхати в Херсон?", "intent": "safety"}
+{"text": "чи можна вийти з собакою", "intent": "safety"}
+{"text": "в укриття йти чи сидіти вдома", "intent": "safety"}
+{"text": "шо таке каб", "intent": "glossary"}
+{"text": "що за ланцет", "intent": "glossary"}
+{"text": "чим шахед відрізняється від ракети", "intent": "glossary"}
+{"text": "як швидко летить кинджал", "intent": "glossary"}
+{"text": "що таке реактивний шахед", "intent": "glossary"}
+{"text": "балістика це що", "intent": "glossary"}
+{"text": "чим небезпечні каби", "intent": "glossary"}
+{"text": "що таке фпв дрони", "intent": "glossary"}
+{"text": "шо ти вмієш", "intent": "help"}
+{"text": "як тебе питати", "intent": "help"}
+{"text": "які в тебе функції", "intent": "help"}
+{"text": "звідки ти береш дані", "intent": "help"}
+{"text": "ти що за бот", "intent": "help"}
+{"text": "допоможи розібратися як ти працюєш", "intent": "help"}
+{"text": "що можна в тебе спитати", "intent": "help"}
+{"text": "куди влучили в Запоріжжі", "intent": "refuse"}
+{"text": "де прилетіло", "intent": "refuse"}
+{"text": "скільки шахедів збили", "intent": "refuse"}
+{"text": "де працює ппо зараз", "intent": "refuse"}
+{"text": "які наслідки атаки на Херсон", "intent": "refuse"}
+{"text": "шо там бахкає в Ізмаїлі", "intent": "refuse"}
+{"text": "де стоять мобільні вогневі групи", "intent": "refuse"}
+{"text": "чи збили ту ракету", "intent": "refuse"}
+{"text": "є жертви?", "intent": "refuse"}
+{"text": "що підбили в Павлограді", "intent": "refuse"}
+{"text": "привітулі", "intent": "chitchat"}
+{"text": "дякую тобі", "intent": "chitchat"}
+{"text": "як ти", "intent": "chitchat"}
+{"text": "яка завтра погода", "intent": "chitchat"}
+{"text": "розкажи щось смішне", "intent": "chitchat"}
+{"text": "добраніч", "intent": "chitchat"}
+{"text": "ок", "intent": "chitchat"}
+{"text": "ти взагалі розумний чи ні", "intent": "chitchat"}
+{"text": "мені страшно дуже", "intent": "chitchat"}
+{"text": "котра зараз година", "intent": "chitchat"}
+{"text": "порадь що подивитися", "intent": "chitchat"}

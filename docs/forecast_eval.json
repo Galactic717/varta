@@ -1,0 +1,24 @@
+{
+ "radius_km": 20.0,
+ "horizons_min": [
+  30.0,
+  60.0
+ ],
+ "n_train": 1489308,
+ "n_test": 421224,
+ "positive_rate_train": 0.307,
+ "brier_train_by_sigma": {
+  "10": 0.0438,
+  "15": 0.0535,
+  "20": 0.0645,
+  "25": 0.0753,
+  "30": 0.0853,
+  "40": 0.1026,
+  "50": 0.1167,
+  "60": 0.1282
+ },
+ "best_sigma": 10,
+ "brier_test_physics": 0.043,
+ "brier_test_sigma20": 0.064,
+ "brier_test_prior": 0.2127
+}

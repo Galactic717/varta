@@ -1,0 +1,165 @@
+:root {
+  --ink: #1b1e26;
+  --ink-2: #5b6474;
+  --glass: rgba(255, 255, 255, 0.70);
+  --glass-strong: rgba(244, 246, 250, 0.94);
+  --glass-filter: blur(22px) saturate(1.25) brightness(1.8);
+  --ring: inset 0 0 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(5, 10, 20, 0.16), 0 8px 24px rgba(5, 10, 20, 0.18);
+  --chip: rgba(255, 255, 255, 0.72);
+  --accent: #2f6fed;
+  --me: #5aa6ff;
+  --red: #e2384f;
+  --amber: #f59e0b;
+  --ok: #1f9d55;
+  --r-s: 9px;
+  --r-m: 12px;
+  --r-l: 16px;
+  --font: "Fixel Display", Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+  /* кольори типів цілей */
+  --t-uav: #f0820e; --t-fpv: #f0820e; --t-missile: #e2384f; --t-ballistic: #b21e6b;
+  --t-kab: #d9531e; --t-mig31k: #7c4dff; --t-recon: #1f9bd8; --t-unknown: #6b7790;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0e1a28; color: var(--ink); font: 15px/1.35 var(--font); }
+#map { position: fixed; inset: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.lg {
+  background: var(--glass);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
+  box-shadow: var(--ring);
+}
+
+/* ---------- пошук ---------- */
+.top-left { position: fixed; top: 8px; left: 8px; z-index: 5; width: 340px; }
+.search { position: relative; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border-radius: var(--r-m); }
+.search svg { width: 18px; height: 18px; fill: none; stroke: var(--ink-2); stroke-width: 2; flex: none; }
+.search input { flex: 1; min-width: 0; border: 0; background: transparent; font: 500 15px var(--font); color: var(--ink); outline: none; }
+.search-results { position: absolute; top: 44px; left: 0; right: 0; margin: 0; padding: 4px; list-style: none;
+  background: var(--glass-strong); border-radius: var(--r-m); box-shadow: var(--ring); max-height: 320px; overflow: auto; }
+.search-results li { display: flex; justify-content: space-between; gap: 8px; padding: 8px 10px; border-radius: var(--r-s); cursor: pointer; }
+.search-results li[aria-selected="true"], .search-results li:hover { background: rgba(47, 111, 237, 0.10); }
+.search-results small { color: var(--ink-2); }
+
+/* ---------- бокова панель ---------- */
+.panel { position: fixed; z-index: 4; top: 56px; left: 8px; bottom: 76px; width: 340px; border-radius: var(--r-l);
+  display: flex; flex-direction: column; overflow: hidden; }
+.panel.collapsed { bottom: auto; }
+.panel.collapsed .panel-body { display: none; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 12px 4px 16px; }
+.panel-head h1 { margin: 0; font-size: 17px; font-weight: 700; }
+.icon-btn { width: 32px; height: 32px; display: grid; place-items: center; border: 0; border-radius: var(--r-s);
+  background: rgba(255, 255, 255, 0.55); }
+.icon-btn:hover { background: #fff; }
+.icon-btn svg { width: 18px; height: 18px; fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linejoin: round; }
+.panel-body { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 8px 8px; }
+.onmap { padding: 4px 8px 8px; font-size: 14px; }
+.onmap b { font-size: 22px; margin-left: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 6px 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 3px 11px 3px 3px; border: 0;
+  border-radius: 999px; background: var(--chip); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.09); font: 700 13px var(--font); }
+.chip[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--accent); }
+.tile { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+.tile img { width: 18px; height: 18px; }
+.row .tile { width: 32px; height: 32px; border-radius: var(--r-s); }
+.row .tile img { width: 22px; height: 22px; }
+
+.myplace:empty { display: none; }
+.myplace { margin: 0 6px 8px; padding: 10px 12px; border-radius: var(--r-m); background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06); font-size: 13px; }
+.myplace .t { display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 14px; }
+.myplace .t button { border: 0; background: none; color: var(--ink-2); font-size: 12px; }
+.myplace .line { margin-top: 4px; color: var(--ink-2); }
+.myplace .line b { color: var(--ink); }
+.myplace .danger b { color: var(--red); }
+.myplace label { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; color: var(--ink-2); }
+.myplace input[type=range] { width: 110px; }
+
+.tabs { display: flex; gap: 4px; padding: 0 6px 8px; }
+.tabs button { flex: 1; height: 32px; border: 0; border-radius: var(--r-s); background: rgba(255, 255, 255, 0.45); font-weight: 600; }
+.tabs button[aria-selected="true"] { background: #fff; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); }
+.view[hidden], [hidden] { display: none !important; }
+.view { flex: 1; min-height: 0; overflow: auto; }
+.group-h { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; align-items: center;
+  margin: 4px 0; padding: 6px 8px; border-radius: var(--r-s); background: var(--glass-strong); font: 700 12px var(--font); }
+.group-h span:last-child { min-width: 20px; padding: 1px 6px; border-radius: 6px; background: #fff; text-align: center; }
+.row { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px; border: 0; border-radius: var(--r-m);
+  background: none; text-align: left; }
+.row:hover, .row.sel { background: rgba(255, 255, 255, 0.65); }
+.row .txt { flex: 1; min-width: 0; }
+.row .t1 { font: 600 14px var(--font); }
+.row .t2 { color: var(--ink-2); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row .age { color: var(--ink-2); font-size: 12px; white-space: nowrap; }
+.row.stale { opacity: 0.6; }
+.empty { padding: 24px 12px; text-align: center; color: var(--ink-2); }
+.alerts-summary { margin: 8px 6px 4px; font-size: 12px; color: var(--ink-2); }
+.alerts-summary b { color: var(--red); }
+
+/* ---------- чат ---------- */
+.chat { display: flex; flex-direction: column; }
+.messages { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 4px 4px 8px; }
+.msg { max-width: 92%; padding: 8px 11px; border-radius: var(--r-m); white-space: pre-wrap; font-size: 14px; }
+.msg.me { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 4px; }
+.msg.bot { align-self: flex-start; background: #fff; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06); border-bottom-left-radius: 4px; }
+.msg.bot small { display: block; margin-top: 6px; color: var(--ink-2); font-size: 11px; }
+.msg.pending { color: var(--ink-2); font-style: italic; }
+.suggest { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 4px 8px; }
+.suggest button { border: 0; border-radius: 999px; padding: 5px 10px; background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); font-size: 12px; }
+.ask { display: flex; gap: 6px; padding: 4px; }
+.ask input { flex: 1; min-width: 0; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-m); background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1); font: 15px var(--font); }
+.ask button { width: 40px; border: 0; border-radius: var(--r-m); background: var(--accent); color: #fff; }
+
+/* ---------- праві кнопки, картка ---------- */
+.controls { position: fixed; z-index: 4; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 6px;
+  padding: 6px; border-radius: var(--r-m); }
+.controls .icon-btn.on { background: #fff; box-shadow: inset 0 0 0 1px var(--accent); }
+.card { position: fixed; z-index: 4; top: 8px; right: 60px; width: 340px; max-height: calc(100% - 96px); overflow: auto;
+  border-radius: var(--r-l); padding: 12px 14px; }
+.card-h { display: flex; gap: 10px; align-items: flex-start; }
+.card-h .tile { width: 34px; height: 34px; border-radius: var(--r-s); }
+.card-h .tile img { width: 24px; height: 24px; }
+.card-h h2 { margin: 0; font-size: 15px; }
+.card-h p { margin: 2px 0 0; color: var(--ink-2); font-size: 12px; }
+.card-h .icon-btn { margin-left: auto; flex: none; }
+.card h3 { margin: 12px 0 4px; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+.card p { margin: 2px 0; font-size: 14px; }
+.badge { display: inline-block; margin-top: 6px; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  box-shadow: inset 0 0 0 1px currentColor; }
+.badge.high { color: var(--red); } .badge.medium { color: #b7791f; } .badge.low { color: var(--ink-2); }
+
+.ctx-menu { position: fixed; z-index: 6; padding: 4px; border-radius: var(--r-m); }
+.ctx-menu button { border: 0; background: none; padding: 8px 12px; border-radius: var(--r-s); }
+.ctx-menu button:hover { background: #fff; }
+
+/* ---------- нижня смуга ---------- */
+.dock { position: fixed; z-index: 3; left: 50%; bottom: 8px; transform: translateX(-50%); width: min(820px, calc(100% - 16px));
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 8px 14px; border-radius: var(--r-l); font-size: 12px; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); }
+.status.live i { background: var(--ok); }
+.status.down i { background: var(--red); }
+.attr { color: var(--ink-2); }
+.disclaimer { color: var(--ink-2); font-style: italic; }
+.maplibregl-ctrl-attrib { display: none; }
+
+/* ---------- маркери ---------- */
+.place-label { font: 600 12px var(--font); color: #cfe3ff; text-shadow: 0 0 3px #04091299, 0 0 2px #040912; }
+
+@media (max-width: 720px) {
+  .top-left { width: calc(100% - 64px); }
+  .panel { top: auto; bottom: 8px; left: 8px; right: 8px; width: auto; height: 46%; }
+  .panel.collapsed { height: auto; }
+  /* у чаті на телефоні місце — повідомленням: картка місця й чипи ховаються, панель вища */
+  .panel.chatting { height: 62%; }
+  .panel.chatting .myplace, .panel.chatting .chips, .panel.chatting .onmap { display: none; }
+  .card { top: auto; bottom: 8px; left: 8px; right: 8px; width: auto; max-height: 50%; z-index: 5; }
+  /* умова API NEPTUN: посилання на джерело видно завжди — на телефоні компактна смуга під пошуком */
+  .dock { top: 54px; bottom: auto; left: 8px; transform: none; width: calc(100% - 64px); padding: 5px 10px;
+    font-size: 11px; gap: 2px 8px; }
+}

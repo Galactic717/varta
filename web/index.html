@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VARTA — карта повітряних загроз</title>
+  <link rel="stylesheet" href="/static/vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="map" role="application" aria-label="Карта повітряних загроз"></div>
+
+  <div class="top-left">
+    <div class="search lg">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="Пошук міста, села або громади" autocomplete="off"
+             aria-label="Пошук населеного пункту" aria-controls="search-results">
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+  </div>
+
+  <aside id="panel" class="panel lg" aria-label="Обстановка">
+    <header class="panel-head">
+      <h1>Обстановка</h1>
+      <button id="collapse" class="icon-btn" aria-label="Згорнути панель" aria-expanded="true">‹</button>
+    </header>
+    <div class="panel-body">
+      <div class="onmap"><span>На карті</span> <b id="total">0</b></div>
+      <div id="chips" class="chips" aria-label="Типи цілей"></div>
+
+      <section id="myplace" class="myplace" aria-live="polite"></section>
+
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tab-list" aria-selected="true" aria-controls="view-list">Цілі</button>
+        <button role="tab" id="tab-chat" aria-selected="false" aria-controls="view-chat">Агент</button>
+      </div>
+
+      <div id="view-list" role="tabpanel" aria-labelledby="tab-list" class="view">
+        <div id="list"></div>
+        <div id="alerts-summary" class="alerts-summary"></div>
+      </div>
+
+      <div id="view-chat" role="tabpanel" aria-labelledby="tab-chat" class="view chat" hidden>
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div id="suggest" class="suggest"></div>
+        <form id="ask" class="ask">
+          <input id="q" maxlength="300" placeholder="Напр.: де найближчий шахед?" aria-label="Питання агенту" autocomplete="off">
+          <button type="submit" aria-label="Надіслати">➤</button>
+        </form>
+      </div>
+    </div>
+  </aside>
+
+  <nav class="controls lg" aria-label="Керування картою">
+    <button id="btn-layers" class="icon-btn" title="Супутник / схема" aria-label="Перемкнути підкладку">
+      <svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></button>
+    <button id="btn-locate" class="icon-btn" title="Моє місце за геолокацією" aria-label="Визначити моє місце">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
+    <button id="btn-fit" class="icon-btn" title="Уся Україна" aria-label="Показати всю Україну">
+      <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  </nav>
+
+  <article id="card" class="card lg" hidden aria-live="polite"></article>
+
+  <div id="ctx-menu" class="ctx-menu lg" hidden>
+    <button id="ctx-set">Зробити моїм місцем</button>
+  </div>
+
+  <footer class="dock lg">
+    <span id="status" class="status" role="status"><i></i><span>підключення…</span></span>
+    <span class="attr">Дані: <a href="https://neptun.in.ua/" target="_blank" rel="noopener">Карта повітряних тривог — NEPTUN</a>,
+      <a href="https://mapa.ua/" target="_blank" rel="noopener">MAPA.UA</a> ·
+      підкладка © Esri, <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a>
+      © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OSM</a> ·
+      місця © <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a></span>
+    <span class="disclaimer">Не офіційна система оповіщення — завжди реагуйте на сирену.</span>
+  </footer>
+
+  <script src="/static/vendor/maplibre-gl.js"></script>
+  <script src="/static/icons.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
