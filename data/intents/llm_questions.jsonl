@@ -16,11 +16,11 @@
 {"text": "де найближче в івано-франківську", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
 {"text": "де дрон в луцьку", "intent": "around", "batch": "A", "gen_intent": "nearest"}
 {"text": "що по цілях біля херсонщини", "intent": "overview", "batch": "A", "gen_intent": "nearest"}
-{"text": "де найближчий шахед в кировограді", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
+{"text": "де найближчий шахед в кропивницькому", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
 {"text": "яка відстань до ракети в одесі", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
 {"text": "де зараз ціль біля львівщини", "intent": "overview", "batch": "A", "gen_intent": "nearest"}
 {"text": "де найближчий дрон під тернополем", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
-{"text": "що там по шахедах в харькові", "intent": "around", "batch": "A", "gen_intent": "nearest"}
+{"text": "що там по шахедах в харкові", "intent": "around", "batch": "A", "gen_intent": "nearest"}
 {"text": "де найближче до дніпра", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
 {"text": "яка відстань до цілі в черкасах", "intent": "nearest", "batch": "A", "gen_intent": "nearest"}
 {"text": "де дрон біля вінниці", "intent": "around", "batch": "A", "gen_intent": "nearest"}
@@ -65,7 +65,7 @@
 {"text": "щось бачите в небі над києвом", "intent": "around", "batch": "A", "gen_intent": "around"}
 {"text": "яка відстань до цілі в одесі", "intent": "nearest", "batch": "A", "gen_intent": "around"}
 {"text": "що там по цілях в запоріжжі", "intent": "around", "batch": "A", "gen_intent": "around"}
-{"text": "щось летить в бік харькова", "intent": "approaching", "batch": "A", "gen_intent": "around"}
+{"text": "щось летить в бік харкова", "intent": "approaching", "batch": "A", "gen_intent": "around"}
 {"text": "що там по небу в вінниці", "intent": "around", "batch": "A", "gen_intent": "around"}
 {"text": "щось гуде над львовом, це дрони?", "intent": "around", "batch": "A", "gen_intent": "around"}
 {"text": "що там по загрозах в дніпрі", "intent": "around", "batch": "A", "gen_intent": "around"}
@@ -77,11 +77,11 @@
 {"text": "щось гуде над одесою, це близько?", "intent": "around", "batch": "A", "gen_intent": "around"}
 {"text": "яка відстань до цілі в полтаві", "intent": "nearest", "batch": "A", "gen_intent": "around"}
 {"text": "що там по небу в херсоні", "intent": "around", "batch": "A", "gen_intent": "around"}
-{"text": "щось летить в бік харькова, це близько?", "intent": "approaching", "batch": "A", "gen_intent": "around"}
+{"text": "щось летить в бік харкова, це близько?", "intent": "approaching", "batch": "A", "gen_intent": "around"}
 {"text": "що там по загрозах в іваново", "intent": "around", "batch": "A", "gen_intent": "around"}
 {"text": "щось летить на київ?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а в дніпро шось є?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "харьков під загрозою?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
+{"text": "харків під загрозою?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "що там по львовську не бачиш нічого?", "intent": "around", "batch": "A", "gen_intent": "approaching"}
 {"text": "на нас летить?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а на одесу щось іде?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
@@ -92,12 +92,12 @@
 {"text": "під вінницю шось іде?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а на нас не летить?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "чи є загроза на суми", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "щось бачиш у бік чернигова", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "а в харьков шось летить", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "луцк у безпеці?", "intent": "safety", "batch": "A", "gen_intent": "approaching"}
-{"text": "щось летить на мариуполь", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
+{"text": "щось бачиш у бік чернігова", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
+{"text": "а в харків шось летить", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
+{"text": "луцьк у безпеці?", "intent": "safety", "batch": "A", "gen_intent": "approaching"}
+{"text": "щось летить на маріуполь", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а до нас шось іде?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "днепр під ударом?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
+{"text": "дніпро під ударом?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "що там по закарпаттю не летить нічого?", "intent": "overview", "batch": "A", "gen_intent": "approaching"}
 {"text": "а в київ бавинки летять?", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "щось гуде над іваново", "intent": "around", "batch": "A", "gen_intent": "approaching"}
@@ -114,7 +114,7 @@
 {"text": "чи є загроза на дніпро", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "щось летить на херсон", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а в київ шось іде", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
-{"text": "що там по кировограду", "intent": "around", "batch": "A", "gen_intent": "approaching"}
+{"text": "що там по кропивницькому", "intent": "around", "batch": "A", "gen_intent": "approaching"}
 {"text": "а на суми шось летить", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "щось гуде в бік луцька", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
 {"text": "а в полтаву шось іде", "intent": "approaching", "batch": "A", "gen_intent": "approaching"}
@@ -154,7 +154,7 @@
 {"text": "а до швеції довго ще летить", "intent": "drop", "batch": "A", "gen_intent": "eta"}
 {"text": "скільки до черкас", "intent": "eta", "batch": "A", "gen_intent": "eta"}
 {"text": "що там по цілі в сумах", "intent": "around", "batch": "A", "gen_intent": "eta"}
-{"text": "через скільки до харькова", "intent": "eta", "batch": "A", "gen_intent": "eta"}
+{"text": "через скільки до харкова", "intent": "eta", "batch": "A", "gen_intent": "eta"}
 {"text": "ціль вже в області чи ні", "intent": "overview", "batch": "A", "gen_intent": "eta"}
 {"text": "скільки до київщини", "intent": "eta", "batch": "A", "gen_intent": "eta"}
 {"text": "а до одеси скільки хв", "intent": "eta", "batch": "A", "gen_intent": "eta"}
@@ -416,7 +416,7 @@
 {"text": "що там по криму", "intent": "overview", "batch": "A", "gen_intent": "refuse"}
 {"text": "бачили бавовну в дніпрі", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
 {"text": "що там з ціллю в львівській", "intent": "overview", "batch": "A", "gen_intent": "refuse"}
-{"text": "де саме влучило в харькові", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
+{"text": "де саме влучило в харкові", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
 {"text": "яка ситуація в павлограді", "intent": "around", "batch": "A", "gen_intent": "refuse"}
 {"text": "що по вінниці", "intent": "around", "batch": "A", "gen_intent": "refuse"}
 {"text": "де працює ппо в одеській області", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
@@ -428,7 +428,7 @@
 {"text": "куди влучило в миколаєві", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
 {"text": "що по івано-франківську", "intent": "around", "batch": "A", "gen_intent": "refuse"}
 {"text": "бачили збиття в києві", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
-{"text": "де працює ппо під харьковом", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
+{"text": "де працює ппо під харковом", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
 {"text": "що там по маріуполю", "intent": "around", "batch": "A", "gen_intent": "refuse"}
 {"text": "куди прилетіло в тернополі", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
 {"text": "де мобільні групи в одесі", "intent": "refuse", "batch": "A", "gen_intent": "refuse"}
@@ -977,13 +977,13 @@
 {"text": "де ці ракети летять??? я в Кривому Розі, що найближче до мене", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "мамо де ми??? де дрони над нами в Черкасах 😭", "intent": "around", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближчий ціль біля Харкова?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
-{"text": "блин а де зараз найближчий дрон під Полтавою? я на трасі під Полтавою", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
+{"text": "ой а де зараз найближчий дрон під Полтавою? я на трасі під Полтавою", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближча загроза в Дніпрі?? ПИШИ ШВИДКО", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "бабусю де ви??? де зараз найближчий шахед біля села Глибоке?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближча ракета біля мене в Одесі??? 😰", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де дрони??? я в Бахмуті де найближче", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де зараз найближчий шахед під Житомиром? я в гуртожитку бояться", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
-{"text": "блин де зараз найближча ціль біля Вінниці?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
+{"text": "ой де зараз найближча ціль біля Вінниці?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближчий дрон під Миколаєвом?? 🚁", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближча ракета під Сумами?? я вдома", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де зараз найближчий шахед під Запоріжжям?? ПИШИ", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
@@ -992,7 +992,7 @@
 {"text": "де найближча ціль під Івано-Франківськом?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де дрони під Херсоном??? я в коридорі", "intent": "around", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближчий шахед під Рівне?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
-{"text": "блин де зараз найближча ракета біля Хмельницького??", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
+{"text": "ой де зараз найближча ракета біля Хмельницького??", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближчий дрон біля Кропивницького?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де зараз найближча ціль під Тернополем?", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
 {"text": "де найближчий шахед біля Жмеринки? 😱", "intent": "nearest", "batch": "C", "gen_intent": "nearest"}
@@ -1063,10 +1063,10 @@
 {"text": "дядьку, а на полтавщину не летить нічого?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "ой господи, що це за звук, у нас у селі під херсоном щось є?", "intent": "around", "batch": "C", "gen_intent": "approaching"}
 {"text": "що по загрозі на львів? чи це просто тривога?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
-{"text": "БЛИН, А НА КИЇВ ПРИЛЕТІТЬ? 😱😱😱", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
+{"text": "ОЙ, А НА КИЇВ ПРИЛЕТІТЬ? 😱😱😱", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "я на трасі під вінницею, чую гул, це на мене летить?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "чи є цілі на суми?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
-{"text": "мальчики, а на харьков не летить нічого? що за шум?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
+{"text": "хлопці, а на харків не летить нічого? що за шум?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "що там на дніпро, бачиш щось на карті?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "Київ, що там?? летить щось?? 🚨", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "ОЙ ТИ ЖО!!! А НА КРОПИВНИЦЬКИЙ НЕ ЛЕТИТЬ???", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
@@ -1087,8 +1087,8 @@
 {"text": "чи є загроза на дніпро, що за шум такий?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "що там на івано-франківськ, чи це просто повітряна?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "пацани, а на полівське щось летить?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
-{"text": "чи є загроза на харьков?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
-{"text": "що там по чернигов, бачиш щось на карті?", "intent": "around", "batch": "C", "gen_intent": "approaching"}
+{"text": "чи є загроза на харків?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
+{"text": "що там по чернігів, бачиш щось на карті?", "intent": "around", "batch": "C", "gen_intent": "approaching"}
 {"text": "БЛЯТЬ ЧО ВІННИЦЯ, ЦЕ НА НАС??", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "що там по сумській області, щось прямує?", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
 {"text": "а на львів не летить нічого? 🙏", "intent": "approaching", "batch": "C", "gen_intent": "approaching"}
@@ -1097,21 +1097,21 @@
 {"text": "через скільки хвилин буде в Полтаві?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "блядь я не встигла в укриття, скільки лишилось до прильоту в Дніпро?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки хвилин до хурмачи?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "бабусю, не бійся, зараз подивимось... сколько до нас ціль?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "бабусю, не бійся, зараз подивимось... скільки до нас ціль?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "Скільки хвилин до цілі на Херсонщина?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде біля Бахмута?? 🔥🔥🔥", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "блин, скільки до нас?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "ой, скільки до нас?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "коли вже ця ракета до Вінниці долетить?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "сколько времени осталось до прильоту в Черкаси?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "скільки часу лишилось до прильоту в Черкаси?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "мамо, скільки хвилин до нас??? 😭😭😭", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки до Сум?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в районі Чернігова?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки хвилин прилетить у Житомир?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки лишилось до прильоту в Одесу?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "блин скільки хвилин до нас??? 😨", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "ой скільки хвилин до нас??? 😨", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в Луцьку?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки до нас в Хмельницький?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "блин, скільки хвилин до цілі на Запоріжжя? 🆘", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "ой, скільки хвилин до цілі на Запоріжжя? 🆘", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки часу до прильоту в Івано-Франківськ?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки до нас у Рівне?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки хвилин буде біля Полтави???", "intent": "eta", "batch": "C", "gen_intent": "eta"}
@@ -1119,13 +1119,13 @@
 {"text": "скільки до нас у Кривий Ріг?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в Житомирі?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки лишилось до цілі в Миколаєві? 😱😱😱", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "БЛИН СКОЛЬКО ДО НАС В КИЕВЕ???", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "ОЙ СКІЛЬКИ ДО НАС У КИЄВІ???", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в Ужгороді?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки до нас у Тернопіль?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки хвилин до прильоту в Луганськ?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в Донецьку???", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки до нас до Дніпра?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
-{"text": "сколько до нас в Сумську область?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
+{"text": "скільки до нас в Сумську область?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки буде в Чернівецьях?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "скільки лишилось до прильоту в Полтавщину?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
 {"text": "через скільки хвилин буде біля Харкова?", "intent": "eta", "batch": "C", "gen_intent": "eta"}
@@ -1143,7 +1143,7 @@
 {"text": "що з дніпром?? бачу спалахи десь", "intent": "around", "batch": "C", "gen_intent": "alert"}
 {"text": "мамо, а в нас у Львові сирена працює? 😭", "intent": "alert", "batch": "C", "gen_intent": "alert"}
 {"text": "у нас в Полтаві відбій уже?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
-{"text": "бро, у харькові зараз затишно чи треба в укриття бігти?", "intent": "safety", "batch": "C", "gen_intent": "alert"}
+{"text": "бро, у харкові зараз затишно чи треба в укриття бігти?", "intent": "safety", "batch": "C", "gen_intent": "alert"}
 {"text": "я в корідорі з дітьми, підкажіть статус по вінниці 🙏🙏🙏", "intent": "around", "batch": "C", "gen_intent": "alert"}
 {"text": "вже відбій у сумах?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
 {"text": "пацани, а що там по запоріжжю? сирена є?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
@@ -1169,7 +1169,7 @@
 {"text": "я на роботі в одесі, сирена працює?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
 {"text": "бабусю, а у нас в селі під тернополем тривога?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
 {"text": "я в корідорі, підкажіть статус по дніпропетровську 🙏", "intent": "around", "batch": "C", "gen_intent": "alert"}
-{"text": "вже все, відбій у харькові?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
+{"text": "вже все, відбій у харкові?", "intent": "alert", "batch": "C", "gen_intent": "alert"}
 {"text": "що там по івано-франківську, знову летить?", "intent": "approaching", "batch": "C", "gen_intent": "alert"}
 {"text": "я вночі кожу, підкажіть чи у львівській області безпечно", "intent": "safety", "batch": "C", "gen_intent": "alert"}
 {"text": "вже відбій у києві чи ще чекати? 🛑", "intent": "alert", "batch": "C", "gen_intent": "alert"}
@@ -1177,7 +1177,7 @@
 {"text": "що зараз по області?", "intent": "overview", "batch": "C", "gen_intent": "overview"}
 {"text": "що там по областях, де саме летить?", "intent": "overview", "batch": "C", "gen_intent": "overview"}
 {"text": "де зараз найнебезпечніше?", "intent": "overview", "batch": "C", "gen_intent": "overview"}
-{"text": "блин, а що в червеньській області відбувається?", "intent": "overview", "batch": "C", "gen_intent": "overview"}
+{"text": "ой, а що в червеньській області відбувається?", "intent": "overview", "batch": "C", "gen_intent": "overview"}
 {"text": "що там на мапі? бачу якісь точки...", "intent": "overview", "batch": "C", "gen_intent": "overview"}
 {"text": "мамо, а де зараз вибухи?", "intent": "refuse", "batch": "C", "gen_intent": "overview"}
 {"text": "що там по Києву? сильно тривожить?", "intent": "around", "batch": "C", "gen_intent": "overview"}
@@ -1222,7 +1222,7 @@
 {"text": "яка ситуація по вінниччині? скільки ракет?", "intent": "count", "batch": "C", "gen_intent": "count"}
 {"text": "скільки шахедів біля хайвоя?", "intent": "count", "batch": "C", "gen_intent": "count"}
 {"text": "скільки цілей на полтавщині зараз?? 🙏", "intent": "count", "batch": "C", "gen_intent": "count"}
-{"text": "яка ситуація в харькові? скільки всього?", "intent": "count", "batch": "C", "gen_intent": "count"}
+{"text": "яка ситуація в харкові? скільки всього?", "intent": "count", "batch": "C", "gen_intent": "count"}
 {"text": "що там по карте?? можна вже виходити з підвалу чи ще небезпечно? 😰", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "пацани, а в чернігові зараз можна по вулицях ходити? а то мені в магаз треба", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "бабусю налякали дуже, це вже все? можна виходити на подвір'я в селі під полтавою?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
@@ -1233,7 +1233,7 @@
 {"text": "я в гуртожиті, під звуки сирен не можу спати, підкажіть коли можна буде в ліжко лягти 😴", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "слухай, а в хавчик зайти можна зараз у Львові чи ще тривога?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "де зараз найбільше небезпечно? я в одеській області, чи можна їхати на море?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
-{"text": "блин, я тільки лягла, це надовго? можна спати чи треба в коридор бігти? 😭", "intent": "safety", "batch": "C", "gen_intent": "safety"}
+{"text": "ой, я тільки лягла, це надовго? можна спати чи треба в коридор бігти? 😭", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "дякуємо боже, це вже все? можна виходити на вулицю в сумах?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "чи безпечно зараз їхати поїздом з києва до херсона?? дуже треба терміново", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "бабусю, не бійся, я подивлюсь, це вже закінчилося? можна виходити на терасу?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
@@ -1245,7 +1245,7 @@
 {"text": "пане бот, а в тернополі зараз безпечно? треба ховатися?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "йо, а в луцьку зараз тихо? можна виходити на прогулянку?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "чи можна їхати на авто по трасі під вінницею, а то я бачу дим десь 🚗💨", "intent": "safety", "batch": "C", "gen_intent": "safety"}
-{"text": "блин, я в офісі, можна вже йти до машини чи ще буде?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
+{"text": "ой, я в офісі, можна вже йти до машини чи ще буде?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "мамо, я вдома, можна вже вимикати повітряну тривогу в мене?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "а в сумах зараз можна спати в ліжку чи тільки в коридорі?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "чи безпечно зараз бути на відкритій місцевості в києві? 🌳", "intent": "safety", "batch": "C", "gen_intent": "safety"}
@@ -1265,7 +1265,7 @@
 {"text": "чи безпечно зараз їхати в автобусі по області?", "intent": "safety", "batch": "C", "gen_intent": "safety"}
 {"text": "що це за звук такий гучний, це шахед чи щось інше?? 😰", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
 {"text": "а балістика це швидко дуже? ми у Полтаві зараз", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
-{"text": "блин, а чим КАБ від звичайної бомби відрізняється?", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
+{"text": "ой, а чим КАБ від звичайної бомби відрізняється?", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "що за фігня, це кинджал летить чи просто ракета? 😱", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
 {"text": "матусі, а де фпв дрони літають? ми в підвалі сидимо", "intent": "overview", "batch": "C", "gen_intent": "glossary"}
 {"text": "бабусю, не бійся, це просто ланцет десь далеко в полі", "intent": "chitchat", "batch": "C", "gen_intent": "glossary"}
@@ -1274,7 +1274,7 @@
 {"text": "каб це керована бомба чи ні? під нюшки прилетіло щось", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "пацани, а фпв це тільки на фронті чи по містах теж?", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "що це за звук як мопед, це точно шахед?? 🦟", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
-{"text": "блин, балістика це ж миттєво прилетить... я в черговому коворкінгу сиджу, страшно капець", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
+{"text": "ой, балістика це ж миттєво прилетить... я в черговому коворкінгу сиджу, страшно капець", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "а ланцет чим від шахеда відрізняється, просто цікаво 🤨", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "яка швидкість у кинджала? ми в Дніпрі чуємо виття", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "це КАБ чи звичайна авіабомба? під херсоном гупає", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
@@ -1282,7 +1282,7 @@
 {"text": "О БОЖЕ ЯК ВОНО ЛЕТЬ, ЦЕ БАЛІСТИКА??? 🆘🆘🆘", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
 {"text": "мамо, а що таке фпв дрон, це як у грі?", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "а ланцет це теж дрон? ми в Чернігові чуємо", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
-{"text": "блин, а кинджал це дуже небезпечно? я в гуртожитку сиджу в коридорі", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
+{"text": "ой, а кинджал це дуже небезпечно? я в гуртожитку сиджу в коридорі", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "що за звук такий низький, це точно шахед 🦟💨", "intent": "drop", "batch": "C", "gen_intent": "glossary"}
 {"text": "а КАБ це сильно вибухає? ми в селі під Сумами", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
 {"text": "слухай, а балістика — це типу дуже швидко летить?", "intent": "glossary", "batch": "C", "gen_intent": "glossary"}
@@ -1356,7 +1356,7 @@
 {"text": "де стоять групи в миколаєві?? терміново!", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "мамо я в коридорі, це в polynivka було чи в rivne", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "яка ціль була під херсоном?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
-{"text": "блин де прилетіло в запоріжжі??? 😰😰😰", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
+{"text": "ой де прилетіло в запоріжжі??? 😰😰😰", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "де саме в полтаві вибухи?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "що там по дронах під києвом? збили?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "яка область зараз під атакою?", "intent": "overview", "batch": "C", "gen_intent": "refuse"}
@@ -1367,7 +1367,7 @@
 {"text": "яка ціль була в дніпрі?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "де мобільні групи в сумах??", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "бабу, це в нас у селі було чи далі?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
-{"text": "що там у харькові, що збили??", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
+{"text": "що там у харкові, що збили??", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "де саме в львівській області прилетіло?? 😭", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "яка ситуація в херсонській області?", "intent": "overview", "batch": "C", "gen_intent": "refuse"}
 {"text": "де працює ппо під києвом?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
@@ -1382,7 +1382,7 @@
 {"text": "де прилетіло в сумах?? 😰", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "де мобільні групи в київській області??", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "що там збили над львовом?", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
-{"text": "де саме в харькові прилетіло??? 😱😱😱", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
+{"text": "де саме в харкові прилетіло??? 😱😱😱", "intent": "refuse", "batch": "C", "gen_intent": "refuse"}
 {"text": "привіт, як ти там? а я от сиджу в гуртожитку в хавчі чекаю на каву ☕️", "intent": "chitchat", "batch": "C", "gen_intent": "chitchat"}
 {"text": "добрий вечір, як ваші справи? а у нас в Полтаві така тиша, тільки коти гуляють", "intent": "chitchat", "batch": "C", "gen_intent": "chitchat"}
 {"text": "привіт! а що там по погоді у вас? а то в Одесі вже зовсім волого 🌧️", "intent": "chitchat", "batch": "C", "gen_intent": "chitchat"}

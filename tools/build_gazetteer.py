@@ -16,7 +16,7 @@ from varta.regions import Regions  # noqa: E402
 
 SRC = ROOT / "data" / "geo" / "_src"
 UK_ONLY = set("іїєґІЇЄҐ")
-RU_ONLY = set("ыэъёЫЭЪЁ")
+RU_ONLY = set("\u044b\u044d\u044a\u0451\u042b\u042d\u042a\u0401")   # літери, яких немає в українській
 CYR = re.compile("[а-яіїєґ]", re.I)
 
 

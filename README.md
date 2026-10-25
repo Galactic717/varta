@@ -6,7 +6,7 @@ and get an answer computed from live open data (NEPTUN, MAPA.UA, official air-ra
 A fine-tuned mmBERT-small only classifies the question into one of 12 intents; distances, bearings, ETA and
 alert status are computed by plain code and rendered by templates, so the model never sees the data and never
 writes the answer. Selected by a measured bake-off on 436 held-out, hand-labelled questions: mmBERT-small 89.7 %,
-char-n-gram 88.8 %, Qwen3.5-0.8B few-shot 58 %, GPT-2 3.7 %. The map follows NEPTUN's visual language
+char-n-gram 88.8 %, Qwen3.5-0.8B few-shot 46 %, GPT-2 8 % (chance level). The map follows NEPTUN's visual language
 (satellite basemap, raion alert fills, white target silhouettes). Personal project, not an official warning system.
 
 ---
@@ -70,18 +70,21 @@ Agent: питання ─► маскування (газетир, лексик�
 
 | модель | тест C | ручний | мс/питання |
 |---|---|---|---|
-| **mmBERT-small (JHU, 2025), fine-tune** — у роботі | **89.7 %** | **98.3 %** | 42 (CPU) |
-| char-n-gram + LogReg — легкий варіант (`VARTA_MODEL=intent_ngram`) | 88.8 % | 95.7 % | 0.07 |
-| MiniLM-L12 + LogReg | 71.1 % | 90.4 % | 3.9 |
-| правила (ключові слова) | 59.6 % | 71.3 % | 0.04 |
-| Qwen3.5-0.8B, few-shot (генеративна LLM) | 58.0 % | 71.3 % | 309 (GPU) |
-| GPT-2 small, few-shot | 3.7 % | 8.7 % | 40 |
+| **mmBERT-small (JHU, 2025), fine-tune** — у роботі | **89.7 %** | 95.7 % | 42 (CPU) |
+| char-n-gram + LogReg — легкий варіант (`VARTA_MODEL=intent_ngram`) | 88.8 % | 96.5 % | 0.07 |
+| MiniLM-L12 + LogReg | 71.1 % | 91.3 % | 3.8 |
+| правила (ключові слова) | 59.9 % | 71.3 % | 0.04 |
+| Qwen3.5-0.8B, few-shot (генеративна LLM) | 46.1 % | 68.7 % | 267 (GPU) |
+| GPT-2 small, few-shot | 8.0 % | 7.8 % | 27 |
 
 Висновки, без рожевих окулярів:
-* Генеративні LLM до 1B для цієї задачі — найгірший вибір: Qwen3.5-0.8B не кращий за ключові слова і в сотні
-  разів повільніший. GPT-2 української не знає взагалі (гірше за випадкове вгадування, 8.3 %).
-* mmBERT і n-gram статистично нерозрізнені на тесті C (McNemar p = 0.65): mmBERT краще тримає незвичні
-  формулювання, n-gram у 600 разів швидший і не потребує torch. Ансамбль дав +0.7 п. — у межах шуму, не взято.
+* Генеративні LLM до 1B для цієї задачі — найгірший вибір: Qwen3.5-0.8B гірша за ключові слова, у сотні разів
+  повільніша і нестабільна (з іншим набором прикладів у підказці мала 58 %). GPT-2 української не знає взагалі —
+  рівень випадкового вгадування (8.3 % на 12 класів).
+* mmBERT і n-gram статистично нерозрізнені (McNemar: тест C p = 0.65, ручний p = 1.0). За замовчуванням
+  лишено mmBERT як ставку на нові, не схожі на навчальні формулювання (енкодер знає мову, n-gram — лише шматки
+  літер), але наші цифри цієї переваги поки не доводять. n-gram у 600 разів швидший і не потребує torch.
+  Ансамбль двох моделей дав +0.7 п. — у межах шуму, не взято.
 * ~10 % помилок, що лишились, — переважно межа «безпечно / балачки» і «летить на / що біля». Ціна такої помилки
   невелика: обидві відповіді беруть ті самі факти й завжди додають рядок офіційної тривоги.
 
@@ -99,7 +102,7 @@ Agent: питання ─► маскування (газетир, лексик�
 |---|---|
 | `varta/geo.py` | відстань, азимут, dead-reckoning як у SDK NEPTUN, найближче проходження, ймовірність пролету в радіусі |
 | `varta/situation.py` | треки NEPTUN + свіжі MAPA, злиття, свіжість, тривоги, журнал |
-| `varta/gazetteer.py` | пошук місць у тексті з відмінками, старими й російськими назвами |
+| `varta/gazetteer.py` | пошук місць у тексті з відмінками і старими назвами |
 | `varta/qa/` | розбір питання, класифікатор, виконання й шаблони |
 | `web/` | карта: супутник Esri + OpenFreeMap, райони з тривогою, силуети цілей, «Моє місце», чат |
 | `tools/` | газетир, генерація й оцінка питань, bake-off моделей, оцінка прогнозу |

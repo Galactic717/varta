@@ -154,10 +154,12 @@ SUFFIX = ["", "", "?", "??", "?!", " будь ласка", " пж", "!", "..."]
 def noise(s: str) -> str:
     if len(s) > 6 and rnd.random() < 0.15:
         i = rnd.randrange(1, len(s) - 1)
-        s = s[:i] + s[i + 1:]
+        if s[i] != "ь":                     # «летить» без «ь» стає російським словом — такої «помилки» не робимо
+            s = s[:i] + s[i + 1:]
     if len(s) > 6 and rnd.random() < 0.1:
         i = rnd.randrange(1, len(s) - 2)
-        s = s[:i] + s[i + 1] + s[i] + s[i + 2:]
+        if "ь" not in s[i:i + 2]:
+            s = s[:i] + s[i + 1] + s[i] + s[i + 2:]
     return s[:1].upper() + s[1:] if rnd.random() < 0.4 else s
 
 

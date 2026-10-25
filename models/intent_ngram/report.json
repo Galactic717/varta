@@ -1,15 +1,15 @@
 {
  "model": "ngram",
  "n_train": 4526,
- "train_s": 5.1,
+ "train_s": 2.9,
  "test_C": {
   "acc": 0.888,
   "macro_f1": 0.881,
   "n": 436
  },
  "human": {
-  "acc": 0.957,
-  "macro_f1": 0.956,
+  "acc": 0.965,
+  "macro_f1": 0.964,
   "n": 115
  }
 }
